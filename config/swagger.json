@@ -1,0 +1,287 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "v1",
+        "title": "Transaction ",
+        "description": "A Transaction endpoint API based on Swagger and built using Node.js"
+    },
+    "paths": {
+        "/transactiontest/{transactionId}/{campaignId}/{network}/{token}":
+         {
+            "get": {
+                "tags": [
+                    "Transaction"
+                ],
+                "operationId": "transactiontest",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "network",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "token",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Transaction"
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/transactiondev/{transactionId}/{campaignId}/{network}/{token}":
+         {
+            "get": {
+                "tags": [
+                    "Transaction"
+                ],
+                "operationId": "transactiondev",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "transactionId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "campaignId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "network",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "token",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Transaction"
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/transactionqa/{transactionId}/{campaignId}/{network}/{token}":
+        {
+           "get": {
+               "tags": [
+                   "Transaction"
+               ],
+               "operationId": "transactionqa",
+               "consumes": [],
+               "produces": [
+                   "application/json",
+                   "text/json"
+               ],
+               "parameters": [
+                   {
+                       "name": "transactionId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "campaignId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "network",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "token",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   }
+               ],
+               "responses": {
+                   "200": {
+                       "description": "OK",
+                       "schema": {
+                           "type": "array",
+                           "items": {
+                               "$ref": "#/definitions/Transaction"
+                           }
+                       }
+                   }
+               },
+               "deprecated": false
+           }
+        },
+        "/transactionstaging/{transactionId}/{campaignId}/{network}/{token}":
+        {
+           "get": {
+               "tags": [
+                   "Transaction"
+               ],
+               "operationId": "transactionstaging",
+               "consumes": [],
+               "produces": [
+                   "application/json",
+                   "text/json"
+               ],
+               "parameters": [
+                   {
+                       "name": "transactionId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "campaignId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "network",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "token",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   }
+               ],
+               "responses": {
+                   "200": {
+                       "description": "OK",
+                       "schema": {
+                           "type": "array",
+                           "items": {
+                               "$ref": "#/definitions/Transaction"
+                           }
+                       }
+                   }
+               },
+               "deprecated": false
+           }
+        },
+        "/transactionproduction/{transactionId}/{campaignId}/{network}/{token}":
+        {
+           "get": {
+               "tags": [
+                   "Transaction"
+               ],
+               "operationId": "transactionproduction",
+               "consumes": [],
+               "produces": [
+                   "application/json",
+                   "text/json"
+               ],
+               "parameters": [
+                   {
+                       "name": "transactionId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "campaignId",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "network",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   },
+                   {
+                       "name": "token",
+                       "in": "path",
+                       "required": true,
+                       "type": "string"
+                   }
+               ],
+               "responses": {
+                   "200": {
+                       "description": "OK",
+                       "schema": {
+                           "type": "array",
+                           "items": {
+                               "$ref": "#/definitions/Transaction"
+                           }
+                       }
+                   }
+               },
+               "deprecated": false
+           }
+        }
+    },
+    "definitions": {
+        "Transaction": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "transactionId": {
+                    "type": "string"
+                },
+                "campaignId": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

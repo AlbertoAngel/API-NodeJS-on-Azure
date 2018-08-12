@@ -1,0 +1,46 @@
+{
+    "name": "transactionapi",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Alberto Angel <NA>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/NA/transactionapi.git"
+    },
+    "bugs": "http://github.com/NA/transactionapi/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "azure-storage": "^2.10.0",
+        "body-parser": "^1.15.0",
+        "cors": "^2.8.4",
+        "ethereumjs-testrpc": "^6.0.3",
+        "express": "^4.0.0",
+        "jsonpath": "^1.0.0",
+        "swaggerize-express": "^4.0.0",
+        "swaggerize-ui": "^1.0.1",
+        "swagmock": "~0.0.2",
+        "web3": "^0.20.1"
+    },
+    "devDependencies": {
+        "eslint": "^2",
+        "tape": "^4",
+        "istanbul": "~0.4.3",
+        "is-my-json-valid": "^2.13.1",
+        "js-yaml": "^3.2.6",
+        "supertest": "^1.2.0",
+        "swagger-parser": "^3.4.1"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+    },
+    "generator-swaggerize": {
+        "version": "4.1.0"
+    },
+    "main": "./server"
+}
